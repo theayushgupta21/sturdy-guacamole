@@ -65,3 +65,81 @@ body {
 .p-datatable-loading-icon {
     color: #fbbf24;
 }
+
+/* Button styles */
+.p-button {
+    background: #f59e0b;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.p-button:hover {
+    background: #fbbf24;
+}
+
+.p-button:disabled {
+    background: #6b7280;
+    color: #9ca3af;
+}
+
+/* OverlayPanel */
+.p-overlaypanel {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.p-overlaypanel .p-overlaypanel-content {
+    background: #1c1c1c;
+    color: #e5e5e5;
+}
+
+/* Slider */
+.p-slider {
+    background: #2a2a2a;
+}
+
+.p-slider .p-slider-handle {
+    background: #f59e0b;
+    border: 2px solid #f59e0b;
+}
+
+/* InputNumber */
+.p-inputnumber input {
+    background: #141414;
+    color: #e5e5e5;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.p-inputnumber input:focus {
+    border-color: #f59e0b;
+    outline: none;
+}
+
+.p-inputnumber-button {
+    background: #f59e0b;
+    border: none;
+}
+
+.p-inputnumber-button:hover {
+    background: #fbbf24;
+}
+
+/* Input text */
+.p-inputtext {
+    background: #141414;
+    color: #e5e5e5;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.p-inputtext:focus {
+    border-color: #f59e0b;
+    outline: none;
+}

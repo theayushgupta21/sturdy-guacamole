@@ -38,7 +38,7 @@ export default function ArtTable() {
             <div className="mb-3 flex gap-3">
                 <CustomSelectOverlay
                     currentPageData={data}
-                    onSelect={(rows) => {
+                    onSelect={(rows: Artwork[]) => {
                         const updated = { ...selectedRows };
                         rows.forEach((r) => (updated[r.id] = r));
                         setSelectedRows(updated);

@@ -1,4 +1,4 @@
-import { Artwork } from "../src/types";
+import type { Artwork } from "../src/types";
 
 const BASE_URL = "https://api.artic.edu/api/v1/artworks";
 
@@ -13,9 +13,13 @@ export interface ApiResponse {
 }
 
 export const fetchArtworks = async (page: number): Promise<ApiResponse> => {
-    const res = await fetch(`${BASE_URL}?page=${page}`);
+    const url = `${BASE_URL}?page=${page}&limit=10&fields=id,title,place_of_origin,artist_display,inscriptions,date_start,date_end`;
+
+    const res = await fetch(url);
+
     if (!res.ok) {
         throw new Error("Failed to fetch artworks");
     }
+
     return res.json();
 };
